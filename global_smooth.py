@@ -1,3 +1,9 @@
+# The global_smooth function is used to build unique values in a saliency map.
+# This is an alternative to the random value jitter used by the MIT benchmark.
+#
+# Author: Sen Jia
+# Date: 4 / Mar / 2020 
+#
 import numpy as np
 import skimage.io as sio
 from skimage.filters import gaussian
@@ -22,11 +28,16 @@ def global_smooth(smap, std=None):
     smoothed saliency map.
     """
     eps = 1e-6
+
+    # if the std is not specified, assign a relatively large value for the Gaussian filter.
     if std:
         h, w = smap.shape[:2]
         std = min(h/4, w/4)
+
     smoothed = gaussian(smap, std)
     smoothed = smap + (smoothed * eps)
+
+    # normalize the smoothed map.
     normalize(smoothed)
     return smoothed
 
