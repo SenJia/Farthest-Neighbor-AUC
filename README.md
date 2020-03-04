@@ -7,7 +7,7 @@ dataset due to its large size. The other datasets were computed using the Pearso
 and K was set to 5. 
 
 
-**Description about the files**
+**File description**
 1. Each file contains a list of negative points in the format of ndarray(.npy). You might want to randomly pick
 a subset of the list based on the size of the positive.
 
