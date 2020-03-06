@@ -1,5 +1,5 @@
 # Farthest-Neighbor-AUC
-This repo contains the generated negative samples used in our paper, "Revisiting Saliency Metrics: Farthest-Neighbor Area Under Curve" [arXiv](https://arxiv.org/abs/2002.10540)
+This repo contains the generated negative samples used in our CVPR 2020 paper, "Revisiting Saliency Metrics: Farthest-Neighbor Area Under Curve" [arXiv](https://arxiv.org/abs/2002.10540)
 
 ## Global Smoothing  
 The pyhton file "global_smooth.py" contains the code for our proposed global Gaussian smoothing. This function is used to create enough unique values for AUC metrics. This can be an alternative to the random jitter used in AUC-judd for the MIT benchmark[line](http://saliency.mit.edu/results_mit300.html). We would like to thank the creators and organizers of the MIT and SALICON leaderboards.
