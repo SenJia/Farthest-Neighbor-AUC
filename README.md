@@ -4,6 +4,11 @@ This repo contains the generated negative samples used in our paper, "Revisiting
 ## Global Smoothing  
 The pyhton file "global_smooth.py" contains the code for our proposed global Gaussian smoothing. This function is used to create enough unique values for AUC metrics. This can be an alternative to the random jitter used in AUC-judd for the MIT benchmark[line](http://saliency.mit.edu/results_mit300.html). We would like to thank the creators and organizers of the MIT and SALICON leaderboards.
 
+Check the value range before and after smoothing based on the sample saliency map "d54.jpg" by running the file directly.
+```
+python global_smooth.py
+```
+
 ## Farthest-Neighbor Negative Set  
 We release the generated negative set for the saliency datasets, SALICON-val, Toronto, MIT1003 and CAT2000,
 using our proposed Farthest-Neighbor sampling process. Note that we applied the fast version of our method on the SALICON-val
