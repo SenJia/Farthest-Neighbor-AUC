@@ -11,10 +11,10 @@ and K was set to 5.
 1. Each file contains a list of negative points in the format of ndarray(.npy). You might want to randomly pick
 a subset of the list based on the size of the positive.
 
-SALICON: [link]()  
-Toronto: [link]()  
+SALICON: [link](https://drive.google.com/file/d/1D-vQY8fBTmGqTofr7pB788y5sjce9z6R/view?usp=sharing)  
+Toronto: [link](https://drive.google.com/file/d/1mwd6Oheuwbu-CRKSyX4uRL1eH3dwQXQb/view?usp=sharing)  
 MIT1003: [link]()  
-CAT2000: [link]()  
+CAT2000: [link](https://drive.google.com/file/d/1stGkaVwTxe5qJeflJNCjdNfNbW-r1bLU/view?usp=sharing)  
 
 2. Alternatively, we also release a tar file that includes
 pre-computed negative distribution maps in PNG format. The negative points were sampled from the (npy) list and the
