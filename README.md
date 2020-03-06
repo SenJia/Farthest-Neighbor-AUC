@@ -23,4 +23,13 @@ sigma value was selected according to Table 1 in the paper.
 -->
 
 
-If you think our work is helpful to your study, we kindly ask please cite our paper:
+If you think our work is helpful to your study, we kindly ask please cite our paper:  
+
+@misc{jia2020revisiting,  
+    title={Revisiting Saliency Metrics: Farthest-Neighbor Area Under Curve},  
+    author={Sen Jia and Neil D. B. Bruce},  
+    year={2020},  
+    eprint={2002.10540},  
+    archivePrefix={arXiv},  
+    primaryClass={cs.CV}  
+}
