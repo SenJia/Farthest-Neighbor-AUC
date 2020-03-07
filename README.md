@@ -23,11 +23,11 @@ Toronto: [link](https://drive.google.com/file/d/1mwd6Oheuwbu-CRKSyX4uRL1eH3dwQXQ
 MIT1003: [link]()  
 CAT2000: [link](https://drive.google.com/file/d/1stGkaVwTxe5qJeflJNCjdNfNbW-r1bLU/view?usp=sharing)  
 
-<!--Text
-2. Alternatively, we also release a tar file that includes
-pre-computed negative distribution maps in PNG format. The negative points were sampled from the (npy) list and the
-sigma value was selected according to Table 1 in the paper.
--->
+
+2. In addition, we also release the pre-computed negative distribution maps in PNG format(value range[0-255]). The negative points were sampled from the above numpy(npy) file and the sigma value was selected according to Table 1 in our paper.
+
+SALICON: [link](https://drive.google.com/file/d/1RYw2LbcZO0qMHtow9S4gb8U3vdoVmN4y/view?usp=sharing)  
+Toronto: [link](https://drive.google.com/file/d/1JshThWpHlbO9eU2G164Pq6ovLxSASw6M/view?usp=sharing)  
 
 
 If you think our work is helpful to your study, we kindly ask please cite our paper:  
