@@ -21,14 +21,21 @@ a subset of the list based on the size of the positive.
 SALICON: [link](https://drive.google.com/file/d/1D-vQY8fBTmGqTofr7pB788y5sjce9z6R/view?usp=sharing)  
 Toronto: [link](https://drive.google.com/file/d/1mwd6Oheuwbu-CRKSyX4uRL1eH3dwQXQb/view?usp=sharing)  
 MIT1003: [link]()  
-CAT2000: [link](https://drive.google.com/file/d/1stGkaVwTxe5qJeflJNCjdNfNbW-r1bLU/view?usp=sharing)  
+CAT2000: [link](https://drive.google.com/file/d/1n0rM2DVibmEPsVYOeMbFyBYwGKHOjBel/view?usp=sharing)  
 
 
 2. In addition, we also release the pre-computed negative distribution maps in PNG format(value range[0-255]). The negative points were sampled from the above numpy(npy) file and the sigma value was selected according to Table 1 in our paper.
 
 SALICON: [link](https://drive.google.com/file/d/1RYw2LbcZO0qMHtow9S4gb8U3vdoVmN4y/view?usp=sharing)  
 Toronto: [link](https://drive.google.com/file/d/1JshThWpHlbO9eU2G164Pq6ovLxSASw6M/view?usp=sharing)  
+MIT1003: [link]()  
+CAT2000: [link](https://drive.google.com/file/d/1Rq8ZUgE7fn4h4jw_Ccon-PtmF_k096QC/view?usp=sharing)  
 
+***Caveat:***
+
+***1. The negative npy and png files for MIT1003 were computed on the rescaled dimension because the size of the image is not fixed. You might want to check this [project](https://github.com/marcellacornia/sam) for the padding strategy and cite their paper.***
+
+***2. The negative files for the CAT2000 dataset were computed using (K=5) for the consistency in our paper. You might want to apply a bigger value of K for higher robustness due to the special categories included.***
 
 If you think our work is helpful to your study, we kindly ask please cite our paper:  
 
