@@ -4,6 +4,7 @@
 # Author: Sen Jia
 # Date: 4 / Mar / 2020 
 #
+import sys
 import numpy as np
 import skimage.io as sio
 from skimage.filters import gaussian
@@ -30,7 +31,7 @@ def global_smooth(smap, std=None):
     eps = 1e-6
 
     # if the std is not specified, assign a relatively large value for the Gaussian filter.
-    if std:
+    if not std:
         h, w = smap.shape[:2]
         std = min(h/4, w/4)
 
@@ -41,8 +42,8 @@ def global_smooth(smap, std=None):
     normalize(smoothed)
     return smoothed
 
-def demo():
-    smap_path = "d54.jpg"
+def demo(smap_path):
+    #print (smap_path)
     smap = sio.imread(smap_path) / 255.
 
     print ("Number of total pixels", smap.size, "Number of unique values", len(np.unique(smap)))
@@ -51,4 +52,5 @@ def demo():
     print ("After global smoothing.", "Number of unique values", len(np.unique(smoothed)))
 
 
-if __name__ == "__main__" : demo()
+if __name__ == "__main__" : 
+    demo(sys.argv[1])
