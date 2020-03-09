@@ -3,16 +3,23 @@ This repo contains the generated negative samples used in our CVPR 2020 paper, "
 
 ## Global Smoothing  
 The pyhton file "global_smooth.py" contains the code for our proposed global Gaussian smoothing. This function is used to create enough unique values for AUC metrics. This can be an alternative to the random jitter used in AUC-judd for the MIT benchmark[line](http://saliency.mit.edu/results_mit300.html). We would like to thank the creators and organizers of the MIT and SALICON leaderboards.
+| Quantized  | Global Smoothing | ROC curve |
+| ------------- | ------------- | ----------|
+  <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/quantized.png" width="300px" height="200px"> |  <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/gs_global.png" width="300px" height="200px">| <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/GS_curve.png" width="300px" height="200px">
 
-Check the value range before and after smoothing based on the sample saliency map "d54.jpg" by running the file directly.
+Check the value range before and after smoothing based on the sample saliency map "samples/d54.jpg" by running the file directly.
 ```
-python global_smooth.py
+python global_smooth.py samples/d54.jpg
 ```
 
 ## Farthest-Neighbor Negative Set  
 We release the generated negative set for the saliency datasets, SALICON-val, Toronto, MIT1003 and CAT2000,
 using our proposed Farthest-Neighbor sampling process. Note that we applied the fast version of our method on the SALICON-val
 dataset due to its large size. The negative set for the other datasets were computed by using the Pearson Correlation as a distance metric and K was set to 5. 
+
+| Positive Map | Negative Map 1 | Negative Map 2 | Negative Map 3 |
+| ------------- | ------------- | ----------| ----------|
+  <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/positive.png" width="200px" height="150px"> |  <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/negative1.png" width="200px" height="150px">| <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/negative2.png" width="200px" height="150px">| <img src="https://github.com/SenJia/Farthest-Neighbor-AUC/blob/master/samples/negative3.png" width="200px" height="150px">
 
 **File description**  
 1. Each file contains a list of negative points in the format of ndarray(.npy). You might want to randomly pick
