@@ -42,7 +42,7 @@ CAT2000: [link](https://drive.google.com/file/d/1Rq8ZUgE7fn4h4jw_Ccon-PtmF_k096Q
 
 ***1. The negative npy and png files for MIT1003 were computed on the rescaled dimension because the size of the image is not fixed. You might want to check this [project](https://github.com/marcellacornia/sam) for the padding strategy and cite their paper.***
 
-***2. The negative files for the CAT2000 dataset were computed using (K=5) for the consistency in our paper. You might want to apply a bigger value of K for higher robustness due to the special categories included.***
+***2. The negative files for the CAT2000 dataset were computed using (K=5) for the consistency in our paper. You might want to apply a larger value of K for higher robustness due to the special categories included.***
 
 If you think our work is helpful to your study, we kindly ask please cite our paper:  
 
